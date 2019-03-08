@@ -46,14 +46,13 @@ if __name__ == "__main__":
                         datefmt='%m-%d %H:%M',
                         filename='/tmp/message_remover_log')
     bot_logger = logging.getLogger()
-    handler = logging.StreamHandler(sys.stdout)
-    handler.setLevel(logging.INFO)
+    stream_handler = logging.StreamHandler(sys.stdout)
+    stream_handler.setLevel(logging.INFO)
     formatter = logging.Formatter('%(asctime)s - %(message)s')
-    handler.setFormatter(formatter)
-    bot_logger.addHandler(handler)
+    stream_handler.setFormatter(formatter)
+    # bot_logger.addHandler(stream_handler)
 
     proxy = None
-    proxy = (SOCKS5, '51.144.86.230', 18001, True, 'usrTELE', 'avt231407')
     telegram_client = TelegramClient(PHONE_NUMBER.strip('+'),
                                      APP_API_ID,
                                      APP_API_HASH,
