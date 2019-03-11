@@ -6,3 +6,5 @@ Bot should be launched in interactive mode with mounting to local directory for 
 `docker build --tag=msg_remover .`
 
 `docker run -v (pwd):/app -ti msg_remover`
+
+You can type `--remove-now` (`-r`) argument: bot only remove messages and stop.
