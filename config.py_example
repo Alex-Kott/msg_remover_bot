@@ -1,3 +1,12 @@
 PHONE_NUMBER = '+79xxxxxxxxx'
 APP_API_ID = '862798'
 APP_API_HASH = '8bddd89e3bd0cacc7c0262df1f3bef40'
+
+EXCEPTION_CHATS = [
+    'Chat name 1',
+    'Chat name 2'
+]
+
+
+# time should be in "HH:MM:ss" format. UTC time.
+REMOVING_TIME = '01:00:00'
